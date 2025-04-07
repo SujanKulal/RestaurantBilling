@@ -34,7 +34,6 @@ public class RestaurantBilling {
             }
             StringBuilder itemList = new StringBuilder();
             double total =0;
-            double price = 0;
 
             for(int id : selectedIds){
                 ResultSet items = st.executeQuery("SELECT * FROM menu WHERE id = " + id);
